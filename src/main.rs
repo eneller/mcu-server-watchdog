@@ -4,7 +4,7 @@ use serialport::SerialPort;
 
 const HEARTBEAT_INTERVAL: Duration = Duration::from_secs(5);
 const HEARTBEAT_MESSAGE: &str = "OK";
-const WATCHDOG_DEVICE: &str = "/dev/watchdog0";
+const WATCHDOG_DEVICE: &str = "/dev/heartbeat";
 
 
 fn main() {
